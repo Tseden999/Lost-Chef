@@ -8,6 +8,7 @@ import Recipes from "./components/Recipes";
 import AddRecipe from "./components/AddRecipe";
 import LikedProducts from "./components/likedProducts";
 import ForgotPassword from "./components/ForgotPassword";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -26,6 +27,8 @@ function App() {
           <Route path="/addRecipe" element={<AddRecipe />} />
         </Route>
       </Routes>
+
+      <Footer />
     </Router>
   );
 }

@@ -34,7 +34,7 @@ const LikedProducts = () => {
     try {
       if (
         window.confirm(
-          "Are you sure you wanna remove this recipe from favourites??"
+          "Are you sure you wanna remove this recipe from your favourites??"
         )
       ) {
         const response = await fetch(

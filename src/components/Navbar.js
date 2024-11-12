@@ -37,7 +37,7 @@ const Navbar = () => {
             style={isOpen ? { transform: "rotate(90deg)" } : {}}
           />
 
-          <h2>Recipe Sharing App</h2>
+          <img src="/logo.png" height={60} width={100} />
         </div>
         <div className={`nav-right ${isOpen ? "open" : ""}`}>
           <ul>

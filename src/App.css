@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&family=Poppins:wght@300&family=Roboto:wght@500;700&family=Source+Code+Pro:ital@1&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,71 +8,84 @@
 
 }
 
-body{
+body {
   background-color: rgb(212, 216, 216);
+
 }
 
-/* Container for the Signup form */
+
 .SignupContainer {
   border: 1px solid rgb(0, 0, 0);
   width: 90%;
-  max-width: 500px; /* Limit the maximum width for better readability */
+  max-width: 500px;
+
   margin: auto;
   padding: 2rem;
-  border-radius: 0.5rem; /* Rounded corners for a softer look */
-  background-color: #f8f8f8; /* Light background color */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  border-radius: 0.5rem;
+
+  background-color: #f8f8f8;
+
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+
   margin-top: 10rem !important;
 }
 
-/* Signup form styles */
+
 .SignupContainer form {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem; /* Increased gap for better spacing */
+  gap: 1.5rem;
+
 }
 
 .SignupContainer form input {
   padding: 1rem;
   font-size: 1rem;
-  border: 1px solid #ccc; /* Lighter border color */
+  border: 1px solid #ccc;
+
   outline: none;
   border-radius: 0.3rem;
   width: 100%;
-  transition: border-color 0.3s ease-in-out; /* Smooth border color transition */
+  transition: border-color 0.3s ease-in-out;
+
 }
 
 .SignupContainer form input:focus {
-  border-color: #007bff; /* Highlight border on focus */
+  border-color: #007bff;
+
 }
 
 .SignupContainer form button {
   padding: 1rem 2rem;
   font-size: 1rem;
-  background-color: #007bff; /* Blue button color */
-  color: white; /* White text color */
+  background-color: #384358;
+
+  color: white;
+
   border: none;
   border-radius: 0.3rem;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out; /* Smooth background color transition */
+  transition: background-color 0.3s ease-in-out;
+
 }
 
 .SignupContainer form button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #1d5760;
+
 }
 
 
-.fill-fields-error{
+.fill-fields-error {
   color: red;
   padding: 0.2rem;
   transition: all 0.4s;
-  
+
 }
 
-/* Navbar container */
+
 nav {
-  background-color: #333;
+  background-color: #473e66;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -86,7 +99,7 @@ nav {
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Navigation items */
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -99,9 +112,8 @@ nav ul li {
   text-align: center;
 }
 
-/* Navigation links */
 nav ul li a {
-  color: white;
+  color: #bd83b8;
   text-decoration: none;
   font-weight: bold;
   padding: 0.5rem 1rem;
@@ -116,8 +128,8 @@ nav .nav-right {
 }
 
 nav ul li a.active {
-  background-color: white;
-  color: #333;
+  background-color: #f5d7db;
+  color: #1b3358;
   border-radius: 0.2rem;
 }
 
@@ -132,14 +144,11 @@ nav .nav-left {
 
 }
 
-.hamburger-icon{
+.hamburger-icon {
   display: none;
   transition: all 0.4s ease-in-out;
 }
 
-/* ... Previous CSS Code ... */
-
-/* Hamburger icon styles */
 .hamburger-icon {
   display: none;
   font-size: 1.5rem;
@@ -147,7 +156,7 @@ nav .nav-left {
   transition: transform 0.4s ease-in-out;
 }
 
-/* Media query for mobile and tablet devices */
+
 @media (max-width: 768px) {
   nav {
     flex-direction: column;
@@ -162,7 +171,7 @@ nav .nav-left {
   }
 
   .nav-right {
-    background-color: #333;
+    background-color: #1b3358;
     width: 100%;
     transition: all 0.5s ease-in-out;
     position: absolute;

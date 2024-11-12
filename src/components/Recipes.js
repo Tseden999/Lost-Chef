@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import "../styles/Searchbar.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the CSS for styling
+import footer from "./footer";
 
 const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
@@ -36,7 +37,7 @@ const Recipes = () => {
   const handleDeleteRecipe = async (recipeId) => {
     try {
       // Confirm the deletion with the user
-      if (window.confirm("Are you sure you want to delete this recipe?")) {
+      if (window.confirm("Are you sure you want to delete the recipe?")) {
         // Send a DELETE request to the server
         const response = await fetch(
           `http://localhost:9000/auth/recipe/${recipeId}`,
@@ -184,6 +185,7 @@ const Recipes = () => {
         <h2 className="no-recipes">No Recipes Found</h2>
       )}
       <ToastContainer />
+      <footer />
     </div>
   );
 };

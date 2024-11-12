@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import "../App.css";
 import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"; // Import the CSS for styling
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showError, setShowError] = useState(false); // State to control the error message visibility
+  const [showError, setShowError] = useState(false);
   const Email = email.toLowerCase();
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!email || !password || !name) {
-      // If any of the fields are empty, show the error message
+
       setShowError(true);
-      return; // Prevent further execution
+      return;
     }
 
     try {
@@ -59,7 +59,7 @@ const Register = () => {
         />
         <input
           type="email"
-          placeholder="Enter Your email"
+          placeholder="Enter Your Email"
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
