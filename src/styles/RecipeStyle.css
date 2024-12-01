@@ -1,0 +1,159 @@
+.banner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  max-width: 80%;
+}
+
+
+#panIconCont {
+  top: 25px;
+  padding: 10px 20px;
+  padding-right: 60px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #FF6F61;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0.4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-decoration: none;
+}
+
+.Recipes {
+  margin: 20px;
+  margin-top: 6rem;
+}
+
+
+.Recipe {
+  width: 450px;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.Recipe h2 {
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+
+.Recipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
+.Recipe h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.Recipe ul {
+  list-style-type: disc;
+  padding-left: 8px;
+}
+
+
+.Recipe p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-top: 10px;
+}
+
+
+.Recipe a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  margin-left: 1rem;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 6px 15px;
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+  background-color: #c82333;
+}
+
+
+.add-to-favorites-button {
+  background-color: #007bff;
+
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.add-to-favorites-button:hover {
+  background-color: #0056b3;
+
+}
+
+.no-recipes {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .Recipes {
+    gap: 10px;
+
+  }
+}
+
+
+
+
+
+@media (min-width: 992px) {
+  .Recipes {
+    gap: 40px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .Recipes {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .banner {
+    width: 100%;
+  }
+
+  #panIconCont {
+    padding-right: 30px;
+  }
+
+  #panicon {
+    display: none;
+  }
+
+  .Recipe {
+    width: 100%;
+  }
+}
